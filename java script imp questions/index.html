@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>java script imp question</title>
+  </head>
+  <body>
+    <!-- <input type="number" name="" step="any" id="inputNum" />
+    <button onclick="cnvrt()">convert</button>
+    <h1 id="result"></h1> -->
+
+    <script>
+      // q-1 write a function to add a two number.
+      // let add= (a,b)=>{
+      //     return a+b;
+      // }
+      // let result = add(5,6)
+      // console.log(result);
+
+      // q-2 write a program square root of a number.
+
+      //    function result(num1){
+      //     return Math.sqrt(num1);
+
+      //    }
+
+      //    console.log(result(439))
+
+      // q-3 calculate the area of a triangle.
+
+      //this is the area of  right angle triangle.
+      // let area = (b,h)=>{
+      //     return (b*h)/2;
+      // }
+      // console.log(area(79,7))
+      // this is the area of any triangle.
+      // let areaOfTrinangle = (a,b,c) =>{
+      //     let s = (a+b+c)/2
+      //     let tem = s*(s-a)*(s-b)*(s-c)
+      //     return Math.sqrt(tem);
+      // }
+      // console.log(areaOfTrinangle(8,66,70))
+
+      // q-4 swaping two numbers using temporary variable.
+
+      //    let a =40;
+      //    let b = 20;
+      //    let tem = a;
+      //     a = b;
+      //     b = tem;
+      //     console.log(a,b);
+
+      //q-5 swaping two numbers  without using temporary variable.
+      //    let a = 66;
+      //    let b = 23;
+      //    console.log(`before swapping: a = ${a} , b = ${b}`)
+      //    a = a+b;
+      //    b = a-b;
+      //    a = a-b;
+      //    console.log(` after swapping: a = ${a} , b = ${b}`)
+
+      // q-6 convert kilometer to miles in js. 1km=.621371
+      // let cnvrt =()=>{
+      //     let kms = document.getElementById('inputNum').value;
+      //     const factor = 0.621371;
+      //     let miles = kms*factor;
+      //     document.getElementById('result').innerText = ` ${kms}kms is equal to ${miles} miles`
+
+      // }
+      // q-7 convert celcius to fahrenheit using js.
+      // let cnvrt = () => {
+      //   let celcius = document.getElementById("inputNum").value;
+      //   const factor = 1.8 + 32;
+      //   let fahrenheit = celcius * factor;
+      //   document.getElementById(
+      //     "result"
+      //   ).innerText = `${celcius} Celcius is = ${fahrenheit} fahrenheit`;
+      // };
+
+      //q-8 check a number is positive ,negative or zero.
+      // let num = parseInt(prompt("enter a number"));
+      // if (num<0){
+      //   console.log("this is a negative number.")
+      // }
+      // else if (num==0){
+      //   console.log("this is a zero.")
+      // }
+      // if (num>0){
+      //   console.log("this is a positive number.")
+
+      // }
+      //Q-9 write a js program to generate random number.
+      //  let num =Math.floor(Math.random()*11)
+      //  console.log(num);
+      // q-10 check if number is odd or even?
+      // let num = parseInt(prompt("enter a number."));
+      // if (num===0){
+      //   console.log("the num is neither odd nor even.")
+      // }
+      // else if (num<0 && num%2 ===0){
+      //   console.log(`the ${num} is a negative even number.`)
+      // }
+      // else if (num<0 && num%2 !==0){
+      //   console.log(`the ${num} is a negative odd number.`)
+      // }
+      // else if (num>0 && num%2 ==0){
+      //   console.log(`the ${num} is a even number.`)
+      // }else{
+      //   console.log("this  is a odd number.")
+      // }
+      // other shot method by  ternary operator.
+      //  let num = prompt('enter a num.')
+      //      let res = num%2 == 0 ?"this is an even number." : "this is a odd number.";
+      //      console.log(res);
+
+      //q-11 check if the num is a prime num or not?
+      
+      // let num = parseInt(prompt('please enter a number.'));
+      // let isPrime = ()=>{
+      //   for (let i=2; i<num; i++){
+      //     if (num % i ===0){
+      //       console.log(`${num} is not  a prime number.`)
+      //       break;
+      //     }else{
+      //       console.log(`${num} is a prime number.`)
+      //       //return true;
+      //     }
+      //   }
+      // }
+      // isPrime();
+
+      //q-12 find the largest number among three numbers.
+      //  let a;
+      //  let b;
+      //  let c;
+      //  let larNum = (a,b,c) => {
+      //     if (a>b && a>c){
+      //       console.log(`${a} is the largest number`)
+      //     }
+      //     else if (b>a && b>c){
+      //       console.log(`${b} is the largest number`)
+      //     }
+      //     else if (c>a && c>b){
+      //       console.log(`${c} is the largest number`)
+      //     }
+      // }
+      //  larNum(99,24,25);
+
+      // q-13 write a js program to find the factorial of a num.
+      // let num = prompt("enter a num.");
+      // let fact = 1;
+      // let factorial = () => {
+      //   for (let i = 1; i <= num; i++) {
+      //     fact = fact * i;
+      //   }
+      //   return fact;
+      // };
+      // factorial();
+      // console.log(`the factorial of ${num} is ${fact}`);
+
+      //q-14 program to print table of any number.
+      //let num = prompt("enter a number")
+      // let table =(num) =>{
+      //   for(let i=1; i<=10; i++){
+      //     let res = num*i;
+      //     console.log(`${num} * ${i} = ${res}`)
+      //   }
+      // }
+      // table(8);
+
+      //q-15 make a simple calculator using switch case.
+      // let num1 = parseInt(prompt("please enter first number"));
+      // let num2 = parseInt(prompt("please enter second number"));
+      // let operator = prompt("enter operator any of this +,*,-,/.");
+      // switch (operator) {
+      //   case "+":
+      //     let res = num1 + num2;
+      //     console.log(`${num1} + ${num2} =${res} `);
+      //     break;
+      //   case "-":
+      //     let res1 = num1 + num2;
+      //     console.log(`${num1} - ${num2} =${res1} `);
+      //     break;
+      //   case "*":
+      //     let res2 = num1 * num2;
+      //     console.log(`${num1} * ${num2} =${res2} `);
+      //     break;
+      //   case "/":
+      //     let res3 = num1 / num2;
+      //     console.log(`${num1} / ${num2} =${res3} `);
+      //     break;
+
+      //   default:
+      //     console.log("use right operator.");
+      //     break;
+      // }
+
+      // q-16 program to check if the number have same last digit.
+      // let num1 = parseInt(prompt("please enter any number."))
+      // let num2 = parseInt(prompt("please enter any number."))
+      // let num3 = parseInt(prompt("please enter any number."))
+      // let compare = () =>{
+      //  let tem1 = num1%10
+      //  let tem2 = num2%10
+      //  let tem3 = num3%10
+      //  if (tem1 == tem2 && tem1 == tem3){
+      //   console.log(`${num1} , ${num2} and ${num3} have same last digit.` )
+      //  }else{
+      //   console.log(`${num1} , ${num2} and ${num3} have not same last digit.` )
+
+      //  }
+      // }
+      // compare();
+      // q-17 program to print fibonacci sequence.(0,1,1,2,3,5,8,13,21.....)// (swaping method uses)
+      // let a = 0;
+      // let b = 1;
+      // console.log(a);
+      // console.log(b);
+      // let fSeries = (num) => {
+      //   for (let i = 0; i <= num; i++) {
+      //     tem = a + b;
+      //     console.log(tem);
+      //     a = b;
+      //     b = tem;
+      //   }
+      // };
+      // fSeries(15);
+
+      //another shortest way to find the fibonacci series.
+      // let fibonacci = (n) =>{
+      //   let fib = [0,1];
+      //   for (let i=2; i<=n; i++){
+      //     fib[i] = fib[i-1]+fib[i-2]
+      //   }
+      //   return fib;
+      // }
+      // console.log(fibonacci(5))
+
+      // q-18 program to check armstorong number (153 = 1*1*1 + 5*5*5 +3*3*3 =153).
+
+      // let num = prompt("please enter a number.");
+      // let numOfDigit = num.length;
+      // let sum = 0;
+      // let tem = num;
+      // while (tem > 0) {
+      //   let rem = tem % 10;
+      //   sum = sum + rem ** numOfDigit;
+      //   console.log(sum);
+      //   tem = parseInt(tem / 10);
+      // }
+      // if (sum == num) {
+      //   console.log(`${num} is an armstrong number.`);
+      // } else {
+      //   console.log(`${num} is not an armstrong number.`);
+      // }
+
+      //q-19 print armstrong number in an interval using for loop.
+      // let start = prompt("enter start number");
+      // let end = prompt("enter end number");
+
+      // for (let i = start; i <= end; i++) {
+      //   let noofdigit = i.toString().length;
+      //   let sum = 0;
+      //   let tem = i;
+      //   while (tem > 0) {
+      //     let rem = tem % 10;
+      //     sum = sum + rem ** noofdigit;
+      //     tem = parseInt(tem / 10);
+      //   }
+      //   if (sum == i) {
+      //     console.log(i);
+      //   }
+      // }
+
+      //q-20 program to find the factor in js.
+      // let num = prompt("please entr a number");
+      // let factor = (num)=>{
+      //   for (let i = 1; i<= num; i++){
+      //     let tem = num;
+      //     if (tem%i==0){
+            
+      //       console.log(i)
+      //     }
+      //   }
+      // }
+      // factor(num);
+
+      //q-21 find sum of a natural number using recursion in javascript.  
+      
+      // let sumOfNum = (num)=>{
+      //   if (num>0){
+      //     return num + sumOfNum(num-1);
+      //   }else{
+      //     return num;
+      //   }
+
+      // }
+      // let result = sumOfNum(12)
+      //   console.log(result);
+
+      // q-22 program to check palindrome using js.output = dad, madam age piche se same ho.
+      //case - 1 (without using predefind js method):
+      // let checkPalindrom = (string) => {
+      //   let newstr = string.toLowerCase();
+      //   let left = 0;
+      //   let right = newstr.length -1;
+      //   while(left<right){
+      //     if (newstr[left] !== newstr[right]) return false;
+      //     left++;
+      //     right--;
+      //   }
+      //   return true;
+      // }
+      // console.log(checkPalindrom('level'))
+      
+      //case -2 (using predefind js method)
+    //  function ispal (str){
+    //   let reverse = str.split("").reverse().join("");
+    //   return str.toLowerCase() === reverse.toLowerCase()
+    //  }
+    //  console.log(ispal("level"))
+
+
+    //question 23
+    // program to short words in alphabetical order.
+
+    // let sortword = (input) =>{
+    //     let newInput = input.split("").sort().join("");
+    //     return newInput
+       
+      
+    // }
+    // console.log(sortword("kamranansari"));
+
+    //Question 24
+    //program to replace characters of a strings.//in this program we use replace and regEx method.
+
+    // let string = "mr.REd has a red bike and red-red house and Red car."
+    // let reg = new RegExp('red','gi')
+    // let replacestring = string.replace(reg ,"Blue")
+    // console.log(replacestring);
+   // output-"mr.Blue has a Blue bike and Blue-Blue house and Blue car."
+
+   //Question 25
+   //program to reverse a string using for loop.
+
+  //  let string = "kamranAnsari"
+  //  let strLen = string.length
+  //  let reversestrig = '';
+  //  for (let i=strLen-1; i>=0; i--){
+  //   reversestrig += string[i]
+  //  }
+  //  console.log(reversestrig)
+    
+  //  const table =(n)=>{
+  //   for(i=1;i<=10;i++){
+  //       let result = n * i;
+  //       console.log(`${n} * ${i} = ${result}`)
+  //   }
+  //  }
+  //  table(15)
+    </script>
+  </body>
+</html>
