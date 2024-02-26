@@ -45,21 +45,21 @@
 
       // q-4 swaping two numbers using temporary variable.
 
-      //    let a =40;
-      //    let b = 20;
-      //    let tem = a;
-      //     a = b;
-      //     b = tem;
-      //     console.log(a,b);
+         let a1 =40;
+         let b1 = 20;
+         let tem = a1;
+          a1 = b1;
+          b1 = tem;
+          console.log(a1,b1);
 
-      //q-5 swaping two numbers  without using temporary variable.
-      //    let a = 66;
-      //    let b = 23;
-      //    console.log(`before swapping: a = ${a} , b = ${b}`)
-      //    a = a+b;
-      //    b = a-b;
-      //    a = a-b;
-      //    console.log(` after swapping: a = ${a} , b = ${b}`)
+      // q-5 swaping two numbers  without using temporary variable.
+        //  let a = 66;
+        //  let b = 23;
+        //  console.log(`before swapping: a = ${a} , b = ${b}`)
+        //  a = a+b;
+        //  b = a-b;
+        //  a = a-b;
+        //  console.log(` after swapping: a = ${a} , b = ${b}`)
 
       // q-6 convert kilometer to miles in js. 1km=.621371
       // let cnvrt =()=>{
@@ -132,21 +132,21 @@
       // isPrime();
 
       //q-12 find the largest number among three numbers.
-      //  let a;
-      //  let b;
-      //  let c;
-      //  let larNum = (a,b,c) => {
-      //     if (a>b && a>c){
-      //       console.log(`${a} is the largest number`)
-      //     }
-      //     else if (b>a && b>c){
-      //       console.log(`${b} is the largest number`)
-      //     }
-      //     else if (c>a && c>b){
-      //       console.log(`${c} is the largest number`)
-      //     }
-      // }
-      //  larNum(99,24,25);
+       let a;
+       let b;
+       let c;
+       let larNum = (a,b,c) => {
+          if (a>b && a>c){
+            console.log(`${a} is the largest number`)
+          }
+          else if (b>a && b>c){
+            console.log(`${b} is the largest number`)
+          }
+          else if (c>a && c>b){
+            console.log(`${c} is the largest number`)
+          }
+      }
+       larNum(99,24,25);
 
       // q-13 write a js program to find the factorial of a num.
       let num = prompt("enter a num.");
@@ -371,7 +371,21 @@
         console.log(spaces+stars)
       }
    }
-
+ 
+//    283. Move Zeroes
+// Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+// Example 1:
+// Input: nums = [0,1,0,3,12]
+// Output: [1,3,12,0,0]
+var moveZeroes = function(nums) {
+  let i = 0;
+  for (let j=0; j<nums.length; j++){
+      if(nums[j] !==0){
+          [nums[i],nums[j]] = [nums[j],nums[i]];
+          i++
+      }
+  }
+};
     </script>
   </body>
 </html>
